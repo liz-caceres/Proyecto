@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFTS Nº90</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="sidebar" id="sidebar">
+    <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#instituto">Instituto</a></li>
+      <li><a href="#grierson">Cecilia Grierson</a></li>
+      <li><a href="#normativas">Normativas</a></li>
+      <li><a href="#reglamento">Reglamento</a></li>
+      <li><a href="#biblioteca">Biblioteca</a></li>
+      <li><a href="https://campusvirtual.bue.edu.ar/" target="_blank">Campus Virtual</a></li>
+      <li><a href="https://guarani.bue.edu.ar/" target="_blank">SIU Guaraní</a></li>
+      <li><a href="https://preinscripcion.siu.edu.ar/" target="_blank">SIU Guaraní Pre-ingresantes</a></li>
+      <li><a href="#becas">Programa de Becas</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <h1>Instituto de Formación Técnica Superior Nº90</h1>
+      <p>Ciudad Autónoma de Buenos Aires</p>
+    </header>
+
+    <section class="grid">
+      <div><h2>Carreras</h2><p>Oferta educativa</p></div>
+      <div><h2>Novedades</h2><p>Actualidad institucional</p></div>
+      <div><h2>Académico</h2><p>Información de interés</p></div>
+    </section>
+
+    <section class="info" id="instituto">
+      <h2>Instituto</h2>
+      <p> Acá van autoridades, sedes y tutores...</p>
+    </section>
+
+    <!-- Más secciones como #grierson, #normativas, etc -->
+
+    <footer>
+      <h2>Contacto</h2>
+      <p>Juan B. Ambrosetti 601, CABA</p>
+      <p>Teléfono: +541149815506</p>
+      <p>Mail: <a href="mailto:bedeliaiftsgrierson.ambrosetti@bue.edu.ar">bedeliaiftsgrierson.ambrosetti@bue.edu.ar</a></p>
+    </footer>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
