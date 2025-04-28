@@ -1,19 +1,50 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
+    }
   
+
+  main{
+  margin-left: 220px;
+  }
   .sidebar {
     background: #333;
-    color: white;
     width: 220px;
     height: 100%;
     position: fixed;
     left: -220px;
     top: 0;
-    transition: 0.3s;
+    padding-top: 60px;
+    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+  .sidebar-home{
+    background: #333;
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 0;
     padding-top: 60px;
   }
+    
+  .sidebar-home ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-home ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .sidebar-home ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+
   
   .sidebar.open {
     left: 0;
@@ -32,18 +63,19 @@ body {
   }
   
   .menu-toggle {
+
     position: fixed;
     top: 15px;
     left: 15px;
     font-size: 25px;
     background: none;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 999;
   }
   
   .hero {
-    background: url('tu-imagen.jpg') center/cover no-repeat;
+    background: url('/img/imagen\ de\ Home\ grierson.png') center/cover no-repeat;
     height: 300px;
     color: white;
     text-align: center;
@@ -70,4 +102,12 @@ body {
     padding: 20px;
     text-align: center;
   }
-  
+
+  @media (max-width: 1250px) {
+    main{
+      margin-left: 0px;
+    }
+    .sidebar-home{
+      display: none;
+    }
+  }
