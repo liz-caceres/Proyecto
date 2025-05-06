@@ -8,71 +8,106 @@
 </head>
 <body>
 
+  <!-- Menú lateral -->
   <nav class="sidebar" id="sidebar">
     <button onclick="toggleMenu()" class="menu-toggle">☰</button>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="#instituto.html">Instituto</a></li>
-      <li><a href="#grierson">Cecilia Grierson</a></li>
-      <li><a href="#normativas">Normativas</a></li>
-      <li><a href="#reglamento">Reglamento</a></li>
-      <li><a href="#biblioteca">Biblioteca</a></li>
+      <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+      <li><a href="#" onclick="mostrarSeccion('instituto')">Instituto</a></li>
+      <li><a href="#" onclick="mostrarSeccion('grierson')">Cecilia Grierson</a></li>
+      <li><a href="#" onclick="mostrarSeccion('normativas')">Normativas</a></li>
+      <li><a href="#" onclick="mostarSeccion('carreras')">Carreras</a></li>
+      <li><a href="#" onclick="mostarSeccion('biblioteca')">Biblioteca</a></li>
       <li><a href="https://campusvirtual.bue.edu.ar/" target="_blank">Campus Virtual</a></li>
       <li><a href="https://guarani.bue.edu.ar/" target="_blank">SIU Guaraní</a></li>
-      <li><a href="https://preinscripcion.siu.edu.ar/" target="_blank">SIU Guaraní Pre-ingresantes</a></li>
-      <li><a href="#becas">Programa de Becas</a></li>
+      <li><a href="https://www.preinscripcion.siu.edu.ar/" target="_blank">SIU Guaraní Pre-ingresantes</a></li>
+      <li><a href="#">Programa de Becas</a></li>
     </ul>
   </nav>
 
-  <nav class="sidebar-home">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="#instituto">Instituto</a></li>
-      <li><a href="#grierson">Cecilia Grierson</a></li>
-      <li><a href="#normativas">Normativas</a></li>
-      <li><a href="#reglamento">Reglamento</a></li>
-      <li><a href="#biblioteca">Biblioteca</a></li>
-      <li><a href="https://campusvirtual.bue.edu.ar/" target="_blank">Campus Virtual</a></li>
-      <li><a href="https://guarani.bue.edu.ar/" target="_blank">SIU Guaraní</a></li>
-      <li><a href="https://preinscripcion.siu.edu.ar/" target="_blank">SIU Guaraní Pre-ingresantes</a></li>
-      <li><a href="#becas">Programa de Becas</a></li>
-    </ul>
-  </nav>
   <main>
     <header class="hero">
       <div class="contain_hero">
         <img src="./img/logo_final.png" alt="">
+        <div class="text_content">
         <h1>Instituto de Formación Técnica Superior Nº90</h1>
         <p>Ciudad Autónoma de Buenos Aires</p>
-        
+      </div>
       </div>
     </header>
 
-    <section class="grid">
-      <div><h2>Carreras</h2><p>Oferta educativa</p></div>
-      <div><h2>Novedades</h2><p>Actualidad institucional</p></div>
-      <div><h2>Académico</h2><p>Información de interés</p></div>
+      <section class="grid">
+        <div><h2>Carreras</h2><p>Oferta educativa</p></div>
+        <div><h2>Novedades</h2><p>Actualidad institucional</p></div>
+        <div><h2>Académico</h2><p>Información de interés</p></div>
+      </section>
     </section>
 
-    <section class="info" id="instituto">
+    <!-- Instituto -->
+    <section class="info" id="instituto" style="display: none;">
       <h2>Instituto</h2>
-      <p> Acá van autoridades, sedes y tutores...</p>
+      <p> Escuela Superior de Enfermería "Cecilia Grierson", es el espacio en el cual la comunidad educativa y la ciudadanía en general van a encontrar información sobre las novedades y actividades que se llevan a cabo en la institución. <br>
+        La Escuela Superior de Enfermería "Cecilia Grierson" funciona en dos sedes, ubicadas en Caballito y Villa Lugano respectivamente. 
+      </p>
     </section>
 
-    <!-- Más secciones como #grierson, #normativas, etc -->
+    <!-- Cecilia Grierson -->
+    <section class="info" id="grierson" style="display: none;">
+      <h2>Sobre Cecilia Grierson</h2>
+      <img src="img/grierson.jpg" alt="Cecilia Grierson" style="width: 150px;">
+      <p>
+        Nació el 22 de noviembre de 1859 en <strong>Buenos Aires</strong>.<br>
+        Fue la <strong>primera mujer</strong> que se graduó como <strong>médico en Sudamérica</strong>.<br>
+        Pasó la mayor parte de su niñez en el campo, primero en <strong>Uruguay</strong> y más tarde en Entre Ríos.<br><br>
+        A los 13 años se inició como maestra rural, y a los 23 ingresó a la <strong>Facultad de Medicina</strong> de la UBA. Aún como estudiante fundó la <strong>Escuela de Enfermeras</strong> del Círculo Médico Argentino.<br><br>
+        En 1888 fue <strong>Practicante Menor</strong> en el hospital Rivadavia y en 1889 se graduó como médica. Ejerció en el <strong>hospital Ramos Mejía</strong>, fundó la <strong>Sociedad Argentina de Primeros Auxilios</strong> y escribió sobre <em>kinesiología</em>.<br><br>
+        Participó en luchas por los derechos de la mujer junto a <strong>Alicia Moreau de Justo</strong>, <strong>Elvira Rawson</strong> y <strong>Julieta Lanteri</strong>.<br><br>
+        Falleció el 10 de abril de 1934 en Buenos Aires.
+      </p>
+    </section>
 
+    <!-- Normativas-->
+     <section class="info" id="normativas" style="display: none;">
+      <h2> Normativas</h2>
+      <li><a href="https://drive.google.com/file/d/1m4HvRt5Ufa95wrr9ngDOZ_QHNp2UpZfY/view" target="_blank">Plan de estudio de Tecnicatura Superior para Auxiliares de Enfermería</a>
+      <li><a href="https://drive.google.com/file/d/1KV9aY2HRQV5EkjAdwoi8S6cDTCsjldQy/view" target="_blank">Plan de estudio de Tecnicatura Superior en Enfermería</a>
+      <li><a href="https://app.box.com/s/jlmigvb69e8usx44t66sxwjwrsad3c1i" target="_blank">Regimen de correlatividades</a>
+      <li><a href="https://boletinoficial.buenosaires.gob.ar/normativaba/norma/76855" target="_blank">Reglamento Orgánico del Institucional de la Escuela Superior de Enfermería "Cecilia Grierson" (Resolución 3045/2005)</a>
+      <li><a href="https://drive.google.com/file/d/1vbUT5bQzp4fTnoBnfmSGOaNYO1-5v_cZ/view" target="_blank">Reglamento Interno de la Escuela Superior de Enfermería "Cecilia Grierson" (2023)</a>
+     </section>
+
+    <!-- Footer -->
     <footer>
       <h2>Contacto</h2>
       <p>Juan B. Ambrosetti 601, CABA</p>
-      <p>Teléfono: +541149815506</p>
+      <p>Teléfono: +54 11 4981-5506</p>
       <p>Mail: <a href="mailto:bedeliaiftsgrierson.ambrosetti@bue.edu.ar">bedeliaiftsgrierson.ambrosetti@bue.edu.ar</a></p>
     </footer>
   </main>
 
+  <!-- Script de navegación -->
   <script>
     function toggleMenu() {
       document.getElementById('sidebar').classList.toggle('open');
     }
+
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('main > section');
+      secciones.forEach(sec => {
+        sec.style.display = 'none';
+      });
+
+      const seccion = document.getElementById(id);
+      if (seccion) {
+        seccion.style.display = 'block';
+        seccion.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      mostrarSeccion('inicio');
+    });
   </script>
+
 </body>
 </html>
