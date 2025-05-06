@@ -17,6 +17,8 @@
       <li><a href="#" onclick="mostrarSeccion('grierson')">Cecilia Grierson</a></li>
       <li><a href="#" onclick="mostrarSeccion('normativas')">Normativas</a></li>
       <li><a href="#" onclick="mostrarSeccion('carreras')">Carreras</a></li>
+      <li><a href="#" onclick="mostrarSeccion('alumnos')">Alumnos</a></li>
+      <li><a href="#" onclick="mostrarSeccion('docentes')">Docentes</a></li>
       <li><a href="#" onclick="mostrarSeccion('biblioteca')">Biblioteca</a></li>
       <li><a href="#" onclick="mostrarSeccion('campus virtual')" >Campus Virtual</a></li>
       <li><a href="https://guarani-autogestionagencia.bue.edu.ar/ " target="_blank">SIU Guaraní</a></li>
@@ -26,18 +28,45 @@
   </nav>
   <main>
     <!-- Inicio -->
-    <section id="inicio"   class="grid" >
-        <h1>Instituto de Formación Técnica Superior Nº90</h1>
-        <p>Ciudad Autónoma de Buenos Aires</p>
-      </header>
+    <section id="inicio" class="grid">
+      <h1><strong>Instituto de Formación Técnica Superior Nº90 </strong></h1>
+    
       <section class="grid">
-        <div><h2>Carreras</h2><p>Oferta educativa</p></div>
-        <div><h2>Novedades</h2><p>Actualidad institucional</p></div>
-        <div><h2>Académico</h2><p>Información de interés</p></div>
+        <div onclick="mostrarSeccion('carreras')" style="cursor: pointer;">
+          <h2>Carreras</h2>
+          <p>Oferta educativa</p>
+        </div>
+        <div onclick="mostrarSeccion('novedades')" style="cursor: pointer;">
+          <h2>Novedades</h2>
+          <p>Actualidad institucional</p>
+        </div>
+        <div onclick="mostrarSeccion('academico')" style="cursor: pointer;">
+          <h2>Académico</h2>
+          <p>Información de interés</p>
+        </div>
       </section>
     </section>
- </main>
+    <!---novedades-------------->
+    <section class= "info" id="novedades" style="display: none;" >
+      <h2>Calendario 2025</h2>
+      <p>Se encuentra disponible el calendario académico del 2025
+      </p>
+      <img src="/img/Calendario2025.JPG" alt="Calendario Academico" style="width: 450px;">
+      </section>
+    <!------academicp---------------------->
+    <section id="academico" class="info" style="display: none;">
+      <h2>Información Académica</h2>
+      <p>Contenido académico detallado...</p>
+    </section>
 
+
+
+
+
+
+
+    
+<!----footer------------>
  <footer id="footer">
   <h2>Contacto</h2>
   <p>Juan B. Ambrosetti 601, CABA</p>
@@ -51,33 +80,34 @@
       <h2>Instituto</h2>
       <p> Escuela Superior de Enfermería "Cecilia Grierson", es el espacio en el cual la comunidad educativa y la ciudadanía en general van a encontrar información sobre las novedades y actividades que se llevan a cabo en la institución. <br>
         La Escuela Superior de Enfermería "Cecilia Grierson" funciona en dos sedes, ubicadas en Caballito y Villa Lugano respectivamente. 
-      </p>
-      <strong>Sede Caballito (Instituto de Formación Técnica Superior Nº 90)</strong> <br>
+      </p> <br>
+       <strong>Sede Caballito (Instituto de Formación Técnica Superior Nº 90)</strong> <br>
       Teléfono:+54 11 4981-5506 <br>
       Email: bedeliaiftsgrierson.ambrosetti@bue.edu.ar <br>
       Dirección: Juan B. Ambrosetti 601, CABA <br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7317250875108!2d-58.44053422410769!3d-34.61094475788014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6b0338b3f1%3A0x76d8ca1c02ec6f67!2sJuan%20B.%20Ambrosetti%20601%2C%20C1405BIJ%20C1405BIJ%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1746465920845!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
 
-      <strong>Sede Polo Educativo de Villa Lugano (Instituto de Formación Técnica Superior Nº 91)
+      <br> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7317250875108!2d-58.44053422410769!3d-34.61094475788014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6b0338b3f1%3A0x76d8ca1c02ec6f67!2sJuan%20B.%20Ambrosetti%20601%2C%20C1405BIJ%20C1405BIJ%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1746465920845!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
+
+      <br>  <strong>Sede Polo Educativo de Villa Lugano (Instituto de Formación Técnica Superior Nº 91)
       </strong> <br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.15604268462!2d-58.47169671559612!3d-34.67601099150217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95690efc55b%3A0x27916ebaee88ba8a!2sJos%C3%A9%20Barros%20Pazos%205250%2C%20C1439%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1746466382191!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
+      <br> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.15604268462!2d-58.47169671559612!3d-34.67601099150217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95690efc55b%3A0x27916ebaee88ba8a!2sJos%C3%A9%20Barros%20Pazos%205250%2C%20C1439%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1746466382191!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
       
-      <strong>Breve historia sobre la Escuela</strong> <br>
+      <br> <strong>Breve historia sobre la Escuela</strong> <br>
       Fue fundada en 1886 por Cecilia Grierson, fue la primera escuela de la especialidad en nuestro país y de Latinoamérica.<br>
       Originalmente "Escuelas de Enfermeros, Enfermeras y Masajistas" y se inscribió en la educación superior. <br> Su fundadora innovó pensando una enfermería mixta y laica, centrada en la enseñanza en salud y para la salud de la población.<br>ir que incluyó en la formación a los varones en contraposición de la corriente anglosajona que los había excluido de la profesión.
       En sus inicios solo funcionaba en el turno mañana, en 1982 se creó el turno tarde y en el año 2007 el turno vespertino<br> En el año 2013 se inauguró la sede anexa ubicada en el Polo Educativo de Villa Lugano.<br> Actualmente funciona en los tres turnos en Caballito y en el turno mañana y tarde en Lugano.<br>
-      <strong>Autoridades Sede Caballito</strong> <br>
+      <br> <strong>Autoridades Sede Caballito</strong> <br>
       Rectora: Silvana Karina Moreira <br>
       Vicerrectora del turno Mañana: María Inés Díaz Guijarro <br>
       Vicerrectora del turno Tarde: Jorge López <br>
       Vicerrectora del turno Vespertino: Amalia Laura Criscuolo <br>
        Secretaria: Ing. Prof. Emilse Granda <br>
       Prosecretaria del turno Tarde: Prof. María Soledad Carrizo Russo <br>
-<strong>Tutores </strong> <br>
+   <br>   <strong>Tutores </strong> <br>
 Tutora turno mañana: Ana Cortizas <br>
 Tutora turno tarde: Paola Mosteiro Nadal <br>
 Tutora turno vespertino: Paola Mosteiro Nadal <br>
-<strong>Autoridades Sede Polo Educativo de Villa Lugano </strong> <br>
+<br><strong>Autoridades Sede Polo Educativo de Villa Lugano </strong> <br>
 Rectora: Silvana Karina Moreira <br>
 Vicerrectora del turno Mañana: Silvia Gabriela Pérez <br>
 Vicerrectora del turno Tarde: Graciela Suarez <br>
@@ -124,18 +154,17 @@ Prosecretaria del turno Tarde: Prof. Alba Carrano <br>
     <section class="info" id="carreras" style="display: none;">
       <h2>Carreras</h2>
       <p> El IFTS Nº90, Escuela Superior de Enfermería Cecilia Grierson, dicta: <br>
-        La  <strong> Tecnicatura Superior de Enfermería </strong>, la cual posee un plan de estudios de 28 asignaturas con un tiempo estimado de cursada de 3 años.<br> Es requisito de ingreso contar con título secundario. Al finalizar la cursada y habiendo aprobado todas las materias el alumno obtiene el título de Enfermera/o otorgado por el Ministerio de Educación de la Ciudad Autónoma de Buenos Aires. <br>
-        La  <strong> Tecnicatura Superior en Enfermería para Auxiliares de Enfermería</strong>, tiene en su plan de estudios 18 asignaturas que pueden cursar en 2 años. Es condición de ingreso a la carrera, el certificado y matrícula de auxiliar de enfermería así como certificado laboral y al menos dos años de experiencia en el área de enfermería. Al finalizar la carrera habiendo aprobado todas las materias el alumno obtiene el título de Enfermera/o otorgado por el Ministerio de Educación de la Ciudad Autónoma de Buenos Aires. <br>
-        <br>  En su sede de Caballito ofrecen 3 turnos de cursada: <br>
+      <br> La  <strong> Tecnicatura Superior de Enfermería </strong>, la cual posee un plan de estudios de 28 asignaturas con un tiempo estimado de cursada de 3 años.<br> Es requisito de ingreso contar con título secundario. Al finalizar la cursada y habiendo aprobado todas las materias el alumno obtiene el título de Enfermera/o otorgado por el Ministerio de Educación de la Ciudad Autónoma de Buenos Aires. <br>
+      <br> La  <strong> Tecnicatura Superior en Enfermería para Auxiliares de Enfermería</strong>, tiene en su plan de estudios 18 asignaturas que pueden cursar en 2 años. Es condición de ingreso a la carrera, el certificado y matrícula de auxiliar de enfermería así como certificado laboral y al menos dos años de experiencia en el área de enfermería. Al finalizar la carrera habiendo aprobado todas las materias el alumno obtiene el título de Enfermera/o otorgado por el Ministerio de Educación de la Ciudad Autónoma de Buenos Aires. <br>
+        <br> <strong> En su sede de Caballito ofrecen 3 turnos de cursada:</strong> <br>
+        <br>   mañana (lunes a viernes de 7:30 a 12:30 hs.), <br>
+        <br>  tarde (lunes a viernes de 13 a 18 hs.) y <br>
+        <br>  vespertino (lunes a viernes de 17:30 a 22:30 hs.).<br>
 
-        mañana (lunes a viernes de 7:30 a 12:30 hs.), <br>
-        tarde (lunes a viernes de 13 a 18 hs.) y <br>
-        vespertino (lunes a viernes de 17:30 a 22:30 hs.).<br>
-        En su sede de Villa Lugano las materias se cursan de lunes a viernes en dos turnos: <br>
-        mañana (7:30 a 12:30 hs.) y <br>
-        tarde (13:30 a 18:30 hs.).  <br>
-        Los alumnos deben concurrir a la institución en función la cantidad de materias que deseen cursar. <br>
-
+       <br><strong>  En su sede de Villa Lugano las materias se cursan de lunes a viernes en dos turnos:</strong> <br>
+      <br>mañana (7:30 a 12:30 hs.) y <br>
+      <br> tarde (13:30 a 18:30 hs.).  <br>
+      <br> Los alumnos deben concurrir a la institución en función la cantidad de materias que deseen cursar. <br>
         Las carreras son gratuitas aunque pueden contribuir mensualmente y de modo voluntario con la cooperadora de la institución llamada "María Angélica Olivera". <br>
         <br>  <strong> Inscripción al Instituto </strong> <br>
 Los aspirantes a la vacante deben ser argentinas o argentinos nativos o con radicación. 
@@ -162,6 +191,36 @@ Foto 4x4 <br>
       </p>
     </section>
 
+
+
+<!------alumnos----------------------->
+<section class="info" id="alumnos" style="display: none;">
+<h2>Alumnos</h2>
+<p><strong> Formularios y notas</strong> <br>
+<br> Los siguientes documentos son modelos para facilitar la tramitación de los pedidos del alumnado ante bedelía y las autoridades de la Escuela. <br>
+<br><a href="https://drive.google.com/file/d/1n8vDoV-DUWvDWhnj4tkpfvaGbJTVGGqe/view">Constancia de examen</a> <br>
+<br><a href="https://drive.google.com/file/d/19Cv9UHA0i9AbKCQ38yPo0u_A6D-Uk6Ij/view">Constancia de alumno regular</a> <br>
+<br><a href="https://drive.google.com/file/d/1oyfAqFtmcNTiwGxJEqDyGKRcdrGy-5uF/view">Solicitud a las autoridades</a> <br>
+<br><a href="https://drive.google.com/file/d/1FrMS8K6LtSnt4YZ3ghInW4BrV9IHxOQR/view">Formulario de pase</a> <br>
+<br>  Contacto de la Sede Caballito:<a href="bedeliaiftsgrierson.ambrosetti@bue.edu.ar">bedeliaiftsgrierson.ambrosetti@bue.edu.ar </a><br>
+<br>Contacto de la Sede Polo Lugano:<a href="bedeliaiftsgrierson.polo@bue.edu.ar">bedeliaiftsgrierson.polo@bue.edu.ar</a><br>
+</p>
+</section>
+<!-----docente--------------->
+<section class="info" id="docentes"  style=" display: none;">
+  <h2>Docentes</h2>
+  <p><strong>Concursos docentes  </strong> <br>
+   <br> Se informa que se llama a concurso para conformar el listado de orden de mérito para las materias:<br>
+   <br><a href="https://docs.google.com/spreadsheets/d/14N3oqW22vCwPoZOZN3zHzBGwb0CYkiRc/edit?gid=1124504503#gid=1124504503">Farmacología Clínica (complementaria) </a> <br>
+  <br> <a href="https://drive.google.com/drive/folders/1Zmqky17ZLR_WVN2HjcZVOGg-lczNWRjh"> Enfermería de 18 hs (TM-TT-TV) </a> <br>
+   <br><a href="https://drive.google.com/drive/folders/1Z_QLVvBxun1mJ_HpiqgApm-BzQersDbG"> Enfermería de 36 hs (TM-TT-TV) </a>  <br>
+    <br> Se destaca que al <strong> listado COMPLEMENTARIO, no deberán inscribirse quienes ya se encuentren en los listados vigentes.</strong> <br>
+   <br><strong> Quienes se anoten en más de un listado de enfermería, no necesitan traer copias extras (con un solo juego pueden anotarse en los que deseen).</strong> <br>
+  </p>
+</section>
+
+
+
 <!--biblioteca-->
 <section class="info" id="biblioteca" style="display: none;"
 <h2>Biblioteca</h2>
@@ -174,7 +233,7 @@ Foto 4x4 <br>
            Bibliotecaria: Lic. Vanesa Segovia <br>
 Vespertino: de lunes a viernes de 17:15 a 21:30 hs. <br>
            Bibliotecaria: Lic. Susana Cardozo <br>
-Correo electrónico: bibliotecaesecgrierson@gmail.com <br>
+Correo electrónico:<a href=" bibliotecaesecgrierson@gmail.com">bibliotecaesecgrierson@gmail.com </a><br>
 <br> <strong>Sede Polo Educativo de Villa Lugano</strong> <br>
 Mañana: de lunes a viernes de  8:00 a 12:15 hs. <br>
            Bibliotecario: Juan Nicolás Recife <br>
