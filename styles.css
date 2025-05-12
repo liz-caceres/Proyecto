@@ -45,17 +45,18 @@ body {
 main{
   margin-left: 220px;
   transition: 0.3s ease;
-  }
-  .contain_hero{
+}
+.contain_hero{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 25px;
-  }
+
+}
 .hero {
   background: url('/img/imagen\ de\ Home\ grierson.png') center/cover no-repeat;
-  height: 400px;
+  min-height: 400px;
   color: white;
   padding: 20px;
   border-radius: 8px;
@@ -73,7 +74,6 @@ main{
   font-size: 48.0pt;
   text-align: center;
 }
-
 .grid {
   display: flex;
   gap: 20px;
@@ -116,6 +116,11 @@ footer {
   }
   
 }
+@media (max-width : 900px) {
+  .text_content h1{
+    margin-bottom: 20px;
+  }
+}
 @media (min-width : 1250px) {
   .sidebar ul {
     margin-top: 60px;
@@ -124,3 +129,14 @@ footer {
     left: -150px;
   }
 }
+@media (max-width : 771px) {
+  .contain_hero{
+    flex-direction: column;
+  }
+  .contain_hero img {
+    max-height: 450px;
+    min-height: 350px ;
+    margin-left: 0px;
+  }
+}
+
