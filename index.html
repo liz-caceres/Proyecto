@@ -8,40 +8,39 @@
 </head>
 <body>
 
-
   <!-- Menú lateral -->
   <nav class="sidebar" id="sidebar">
     <button onclick="toggleMenu()" class="menu-toggle">☰</button>
     <ul>
-      <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
-      <li><a href="#" onclick="mostrarSeccion('instituto')">Instituto</a></li>
-      <li><a href="#" onclick="mostrarSeccion('grierson')">Cecilia Grierson</a></li>
-      <li><a href="#" onclick="mostrarSeccion('normativas')">Normativas</a></li>
-      <li><a href="#" onclick="mostrarSeccion('carreras')">Carreras</a></li>
-      <li><a href="#" onclick="mostrarSeccion('alumnos')">Alumnos</a></li>
-      <li><a href="#" onclick="mostrarSeccion('docentes')">Docentes</a></li>
-      <li><a href="#" onclick="mostrarSeccion('biblioteca')">Biblioteca</a></li>
-      <li><a href="#" onclick="mostrarSeccion('campus virtual')" >Campus Virtual</a></li>
+      <li><a href="#"onclick="mostrarSeccion('inicio')">Inicio</a></li>
+      <li><a href="#" data-titulo="Instituto" onclick="mostrarSeccion('instituto')">Instituto</a></li>
+      <li><a href="#" data-titulo="Cecilia Grierson" onclick="mostrarSeccion('grierson')">Cecilia Grierson</a></li>
+      <li><a href="#" data-titulo="Normativas" onclick="mostrarSeccion('normativas')">Normativas</a></li>
+      <li><a href="#" data-titulo="Carreras" onclick="mostrarSeccion('carreras')">Carreras</a></li>
+      <li><a href="#" data-titulo="Alumnos" onclick="mostrarSeccion('alumnos')">Alumnos</a></li>
+      <li><a href="#" data-titulo="Docentes" onclick="mostrarSeccion('docentes')">Docentes</a></li>
+      <li><a href="#" data-titulo="Biblioteca" onclick="mostrarSeccion('biblioteca')">Biblioteca</a></li>
+      <li><a href="#" data-titulo="Campus Virtual" onclick="mostrarSeccion('campus virtual')" >Campus Virtual</a></li>
       <li><a href="https://guarani-autogestionagencia.bue.edu.ar/ " target="_blank">SIU Guaraní</a></li>
       <li><a href="https://guarani-autogestionagencia.bue.edu.ar/preinscripcion/SSAALV/acceso " target="_blank">SIU Guaraní Pre-ingresantes</a></li>
-      <li><a href="#" onclick="mostrarSeccion('programa de becas')">Programa de Becas</a></li>
+      <li><a href="#" data-titulo="Programa de Becas" onclick="mostrarSeccion('programa de becas')">Programa de Becas</a></li>
     </ul>
   </nav>
+  <div></div>
   <main>
     <!-- Inicio -->
-    <header class="hero">
+    <header class="hero" style="height: 100%;">
       <div class="contain_hero">
-        <img src="./img/logo_final.png" alt="">
+        <img id="imagenTitulo" src="./img/logo_final.png" alt="">
         <div class="text_content">
-        <h1>Instituto de Formación Técnica Superior Nº90</h1>
-        <p>Ciudad Autónoma de Buenos Aires</p>
-      </div>
+          <h1 id="Texto">Instituto de Formación Técnica Superior Nº90</h1>
+          <p>Ciudad Autónoma de Buenos Aires</p>
+        </div>
       </div>
       </header>
 
-    <section id="inicio" class="grid">
-      <h1><strong>Instituto de Formación Técnica Superior Nº90 </strong></h1>
-    
+    <section id="inicio" class="grid info text-centrado">
+      <h1 style="font-size: 30px;"><strong>Instituto de Formación Técnica Superior Nº90 </strong></h1>
       <section class="grid">
         <div onclick="mostrarSeccion('carreras')" style="cursor: pointer;">
           <h2>Carreras</h2>
@@ -63,7 +62,7 @@
       <p>Se encuentra disponible el calendario académico del 2025
       </p>
       <img src="/img/Calendario2025.JPG" alt="Calendario Academico" style="width: 450px;">
-      </section>
+    </section>
     <!------academicp---------------------->
     <section id="academico" class="info" style="display: none;">
       <h2>Información Académica</h2>
@@ -78,7 +77,7 @@
   <p>Mail: <a href="mailto:bedeliaiftsgrierson.ambrosetti@bue.edu.ar">bedeliaiftsgrierson.ambrosetti@bue.edu.ar</a></p>
 </footer>
 
-  <main>
+
     <!-- Instituto -->
     <section class="info" id="instituto" style="display: none;">
       <h2>Instituto</h2>
@@ -107,21 +106,17 @@
       Vicerrectora del turno Vespertino: Amalia Laura Criscuolo <br>
        Secretaria: Ing. Prof. Emilse Granda <br>
       Prosecretaria del turno Tarde: Prof. María Soledad Carrizo Russo <br>
-   <br>   <strong>Tutores </strong> <br>
-Tutora turno mañana: Ana Cortizas <br>
-Tutora turno tarde: Paola Mosteiro Nadal <br>
-Tutora turno vespertino: Paola Mosteiro Nadal <br>
-<br><strong>Autoridades Sede Polo Educativo de Villa Lugano </strong> <br>
-Rectora: Silvana Karina Moreira <br>
-Vicerrectora del turno Mañana: Silvia Gabriela Pérez <br>
-Vicerrectora del turno Tarde: Graciela Suarez <br>
- Secretaria: Ing. Prof. Emilse Granda <br>
-Prosecretaria del turno Mañana: Prof. Alicia Ruidíaz <br>
-Prosecretaria del turno Tarde: Prof. Alba Carrano <br>
- 
-      <p>
-
-      </p>
+        <br>   <strong>Tutores </strong> <br>
+      Tutora turno mañana: Ana Cortizas <br>
+      Tutora turno tarde: Paola Mosteiro Nadal <br>
+      Tutora turno vespertino: Paola Mosteiro Nadal <br>
+      <br><strong>Autoridades Sede Polo Educativo de Villa Lugano </strong> <br>
+      Rectora: Silvana Karina Moreira <br>
+      Vicerrectora del turno Mañana: Silvia Gabriela Pérez <br>
+      Vicerrectora del turno Tarde: Graciela Suarez <br>
+      Secretaria: Ing. Prof. Emilse Granda <br>
+      Prosecretaria del turno Mañana: Prof. Alicia Ruidíaz <br>
+      Prosecretaria del turno Tarde: Prof. Alba Carrano <br>
     </section>
 
     <!-- Cecilia Grierson -->
@@ -193,10 +188,7 @@ Certificado laboral de institución u organismo público o privado que acredite 
 Constancia de Vacunas al día (doble adultos y hepatitis "B") <br>
 Foto 4x4 <br>
       </p>
-    </section>
-
-
-
+</section>
 <!------alumnos----------------------->
 <section class="info" id="alumnos" style="display: none;">
 <h2>Alumnos</h2>
@@ -226,7 +218,7 @@ Foto 4x4 <br>
 
 
 <!--biblioteca-->
-<section class="info" id="biblioteca" style="display: none;"
+<section class="info" id="biblioteca" style="display: none;">
 <h2>Biblioteca</h2>
 <p>
   La <strong>biblioteca de la Escuela Superior Cecilia Grierson </strong> es una biblioteca especializada, cuenta en su colección con documentos actualizados en la temática de salud de autores nacionales y extranjeros. La biblioteca de la Escuela Superior Cecilia Grierson es una biblioteca especializada, cuenta en su colección con documentos actualizados en la temática de salud de autores nacionales y extranjeros. <br>
@@ -288,9 +280,9 @@ Si deseas retirar material a domicilio, no te olvides completar el <a href="http
 
     <br> <strong>  Más información sobre tramitación, acreditación de cobros, etc: </strong> <br>
     <br> <a href="https://www.facebook.com/profile.php?id=100078175356730">https://www.facebook.com/profile.php?id=100078175356730  </a>
-
+  </section>
    
-
+</main>
   <!-- Script de navegación -->
  <script>
   function toggleMenu() {
@@ -317,12 +309,57 @@ Si deseas retirar material a domicilio, no te olvides completar el <a href="http
       footer.style.display = 'none';
     }
   }
+//<--------------------------------------------------------------------------------------->
+// Cambiar titulo de la pagina de manera dinamica
 
+    const enlaces_Sidebar = document.querySelectorAll('nav ul li a');
+    const textoTituloElemento = document.getElementById('Texto');
+    const imagenTitulo = document.getElementById('imagenTitulo');
+    const tituloPrincipalTexto = "Instituto de Formación Técnica Superior Nº90";
+    const tamañoFuenteNormal = window.getComputedStyle(textoTituloElemento).fontSize;
+
+    enlaces_Sidebar.forEach(titl => {
+        titl.addEventListener('click', function(event) {
+            const nuevoTitulo = this.getAttribute('data-titulo');
+
+            // Ocultar la imagen al hacer clic en cualquier enlace
+            if (imagenTitulo) {
+                imagenTitulo.classList.add('oculto');
+            }
+
+            if (nuevoTitulo && nuevoTitulo.trim() !== "") {
+                if (textoTituloElemento) {
+                    textoTituloElemento.textContent = nuevoTitulo;
+                    textoTituloElemento.style.fontSize = '48.0pt';
+                }
+            } else {
+                if (textoTituloElemento) {
+                    textoTituloElemento.textContent = tituloPrincipalTexto;
+                    textoTituloElemento.style.fontSize = tamañoFuenteNormal;
+                }
+                // Mostrar la imagen si el título vuelve al principal
+                if (imagenTitulo && textoTituloElemento && textoTituloElemento.textContent === tituloPrincipalTexto) {
+                    imagenTitulo.classList.remove('oculto');
+                }
+            }
+        });
+    });
+
+    // Manejar la carga inicial de la página
+    if (textoTituloElemento && textoTituloElemento.textContent === tituloPrincipalTexto) {
+        if (imagenTitulo) {
+            imagenTitulo.classList.remove('oculto');
+        }
+    }
+  //<-------------------------------------------------------------------------------------->
+
+
+//<--------------------------------------------------------------------------------------->
   document.addEventListener("DOMContentLoaded", () => {
     mostrarSeccion('inicio');
+;
   });
 </script>
 
 </body>
 </html>
-</main>
